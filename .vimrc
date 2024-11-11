@@ -158,3 +158,4 @@ if has('langmap') && exists('+langremap')
   set nolangremap
 endif
 set hlsearch
+set mouse-=a
