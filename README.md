@@ -15,3 +15,5 @@
 
 * [starship](https://starship.rs/guide/)
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* [fzf](https://junegunn.github.io/fzf/) (TODO)
+* [exa](https://the.exa.website/) (TODO)
