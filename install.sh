@@ -4,6 +4,8 @@ work_dir="$(readlink -f `dirname "$0"`)"
 
 if [[ "$SHELL" =~ "bash" ]]; then
     echo "Running in bash"
+    mv ~/.bashrc /tmp/ || echo ""
+    ln -s $work_dir/.config/shell/.bashrc ~/.bashrc
 elif [[ "$SHELL" =~ "zsh" ]]; then
     echo "Running in zsh"
     mv ~/.zshrc /tmp/ || echo ""
