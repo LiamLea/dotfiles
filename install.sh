@@ -7,14 +7,14 @@ if [[ "$SHELL" =~ "bash" ]]; then
 elif [[ "$SHELL" =~ "zsh" ]]; then
     echo "Running in zsh"
     mv ~/.zshrc /tmp/ || echo ""
-    ln -s $work_dir/.zshrc ~/.zshrc
+    ln -s $work_dir/.config/shell/.zshrc ~/.zshrc
 else
     echo "Running in another shell"
 fi
 
 mv ~/.vimrc /tmp/ || echo ""
-ln -s $work_dir/.vimrc ~/.vimrc
+ln -s $work_dir/.config/editor/.vimrc ~/.vimrc
 
 mv ~/.config/starship.toml /tmp/ || echo ""
-ln -s $work_dir/.config/starship.toml ~/.config/starship.toml
+ln -s $work_dir/.config/plugins/starship.toml ~/.config/starship.toml
 
