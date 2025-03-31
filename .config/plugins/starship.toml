@@ -2,6 +2,8 @@
 add_newline = false
 
 format = """
+$python\
+$conda\
 $username\
 :\
 $directory\
@@ -44,8 +46,10 @@ format = "[$duration]($style) "
 style = "yellow"
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+format = "[($virtualenv)]($style) "
+
+[conda]
+format = '[$symbol$environment](dimmed green) '
 
 [kubernetes]
 format = '[\($context\) ](bright-black)'
