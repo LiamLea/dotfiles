@@ -13,7 +13,7 @@ source <(kubectl completion zsh)
 export TF_CLI_ARGS_plan=-parallelism=30
 export TF_CLI_ARGS_apply=-parallelism=30
 source /Users/liamlea/venv/bin/activate
-eval "$(_OPERATE_COMPLETE=zsh_source Operate)"
+eval "$(_OPERATE_COMPLETE=zsh_source operate)"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/liamlea/tools/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/liamlea/tools/google-cloud-sdk/path.zsh.inc'; fi
